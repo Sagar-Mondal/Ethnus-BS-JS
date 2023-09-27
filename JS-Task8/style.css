@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0px;
+  text-align: center;
+  margin-left: 8rem;
+  font-weight: bold;
+  color: rgb(16, 36, 249);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.row {
+  display: flex;
+}
+
+.row .cell {
+  display: flex;
+  flex-basis: 200px;
+  padding: 5px;
+}
+
+.cell-1 {
+  flex-grow: 1;
+}
+
+.cell-1 span {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.row .cell-1-2:nth-of-type(1) label,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  flex-grow: 1;
+}
+
+.row .cell:nth-of-type(2) {
+  flex-basis: 500px;
+}
+
+.container {
+  width: min-content;
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(
+    rgba(255, 215, 185, 0.91) 23%,
+    rgba(223, 159, 247, 0.8) 93%
+  );
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 24px;
+}
+
+.table-cell {
+  display: table-cell;
+  padding: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.checkbox-label {
+  margin-right: 15px;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.btn-register {
+  margin-left: 20rem;
+  background-color: red;
+  text-align: center;
+  color: #f2f2f2;
+  border-radius: 20px;
+  padding: 4px 40px;
+}
+.poor {
+  color: red;
+  margin-left: 20px;
+}

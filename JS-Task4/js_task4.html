@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and time</title>
+    <style type="text/css">
+      body {
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" onClick="getDate()" value="show date" />
+    <div id="date"></div>
+    <input type="button" onClick="getTime()" value="show time" />
+    <div id="time"></div>
+    <script>
+      function getDate() {
+        const months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        const dateObj = new Date();
+
+        let day = String(dateObj.getDate()).padStart(2, "0");
+
+        let year = dateObj.getFullYear();
+        document.getElementById("date").innerHTML =
+          day + "/" + months[dateObj.getMonth()] + "/" + year;
+      }
+      function getTime() {
+        const date = new Date();
+        document.getElementById("time").innerHTML = date.toLocaleString(
+          "en-US",
+          {
+            dateStyle: "full",
+            timeStyle: "full",
+            hour12: false,
+          }
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <body>
+    <div class="container">
+      <h2>
+        Registration Form
+      </h2>
+      <form action="#" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="firstName">First Name:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="text" id="firstName" name="firstName" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="lastName">Last Name:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="text" id="lastName" name="lastName" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="email">Email:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="email" id="email" name="email" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="password">Password:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="password" id="password" name="password" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="rePassword">Re-enter Password:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="password" id="rePassword" name="rePassword" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label>Gender:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label>
+            <br />
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="age">Age:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="text" id="age" name="age" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="phoneNumber">Phone Number:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="text" id="phoneNumber" name="phoneNumber" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="address">Address:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="text" id="address" name="address" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="state">State:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="text" id="state" name="state" /><span class="poor"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label for="country">Country:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <select id="country" name="country">
+              <option value="Choose">Choose your Country</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1-2">
+            <label>Languages known:</label>
+          </div>
+          <div class="cell cell-1-2">
+            <input type="checkbox" id="english" name="languages" value="English" />
+            <label class="checkbox-label" for="english">English</label>
+            <input type="checkbox" id="kannada" name="languages" value="Kannada" />
+            <label class="checkbox-label" for="kannada">Kannada</label>
+            <input type="checkbox" id="hindi" name="languages" value="Hindi" />
+            <label class="checkbox-label" for="hindi">Hindi</label>
+            <input type="checkbox" id="telugu" name="languages" value="Telugu" />
+            <label class="checkbox-label" for="telugu">Telugu</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1">
+            <input type="checkbox" id="declaration" name="declaration" value="true" />
+            <label class="checkbox-label" for="declaration">Hereby I declare all the given details are true.</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1">
+            <span>
+              Login to
+              <a href="https://ethnus.com/" target="_blank">Ethnus</a>
+              website
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell cell-1">
+            <div class="btn-container">
+              <input type="submit" class="btn-register" value="REGISTER" />
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
